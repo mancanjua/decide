@@ -17,7 +17,6 @@ install:
   - pip install codacy-coverage
 script:
   - cd decide
-  - coverage run --branch --source=. ./manage.py test census --keepdb
   - coverage xml
 deploy:
   provider: heroku
