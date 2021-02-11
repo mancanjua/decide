@@ -17,7 +17,7 @@ install:
   - pip install codacy-coverage
 script:
   - cd decide
-  - coverage run --branch --source=. ./manage.py test mixnet --keepdb --with-xunit
+  - coverage run --branch --source=. ./manage.py test mixnet --keepdb
   - coverage xml
 deploy:
   provider: heroku
